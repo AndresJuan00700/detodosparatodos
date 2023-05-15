@@ -1,0 +1,56 @@
+h1{
+    color: blue;
+}
+
+#enlaces{
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+#menu{
+	margin-bottom: 40px;
+}
+#menu ul a {	
+	display: inline-block;
+	justify-content: center;
+	font-size: 30px;
+	margin-right: 40px;
+	color: rgb(5, 189, 189);
+	text-decoration: none;
+}
+#menu ul a:hover {
+color:crimson;
+
+}
+#menu #logo{
+	display: inline-block;
+	width: 100%;
+	margin: 20px;
+
+}
+
+#menu #logo a{
+	text-decoration: none;
+}
+
+#menu #logo img{
+	float: left;
+	margin-left: 70px;
+}
+#menu #logo #inicio{
+	float: right;
+	margin-right: 70px;
+	margin-top:10px;
+	font-size: 22px;
+	color: rgb(77, 77, 77);
+	letter-spacing: 3px;
+}
+
+#btnregistro{
+    margin-top: 20px;
+}
+
+.form-group{
+    margin-left: 250px;
+    margin-bottom: 20px;;
+}

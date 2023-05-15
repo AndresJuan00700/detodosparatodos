@@ -1,0 +1,313 @@
+//Variables generales
+$color_a: #01B1EA;
+$color_a_hover: #555;
+$color_header: #F0F0F0;
+$color_borde_li: #363636;
+$color_h3_lateral: #222;
+$fondo_h3_lateral: #E1E1E1;
+$color_formulario_entradas: #C9C9C9;
+$color_formulario_entradas_focus: #1579b5;
+$color_formulario_botones: #2979CD;
+$color_borde_form: #11608E;
+$fondo_boton: #33AE3D;
+$fondo_boton_hover: #2da336;
+$fondo_nav: #222;
+
+body{
+    background: url(../img/bg.png);
+    font-family: sans-serif, Arial, Helvetica;
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 10px gray;
+        background: white;
+
+        a, a:visited{
+            color: $color_a;
+            text-decoration: none;
+        }
+    
+        a:hover{
+            color: $color_a_hover;
+        }
+
+        //Header
+    
+        #header{
+            width: 100%;
+            height: 145px;
+            box-sizing: border-box;
+            background: $color_header;
+            
+            #logo{
+                padding: 20px;
+                margin-left: 20px;
+                float: left;
+
+                img{
+                    height: 100px;
+                    float: left;
+                }
+
+                a{
+                    color: $color_a;
+                    float: left;
+                    font-size: 40px;
+                    letter-spacing: 4px;
+                    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin-top: 18px;
+                    margin-left: 45px;
+                    text-shadow: 0px 2px 1px #222222;
+                    transition: all 450ms;
+                }
+
+                a:hover{
+                    text-shadow: 0px 2px 1px #222222, 0px 0px 4px $color_a;
+                }
+            }
+        }
+
+        //NavBar
+        #menu{
+            background: $fondo_nav;
+            color: white;
+            height: 55px;
+            overflow: hidden;
+            clear: both;
+            border-bottom: 4px solid $color_a;
+            ul{
+                list-style: none;
+                margin: 0 auto;                
+
+                li{
+                    line-height: 55px;
+                    float: left;
+                    border-right: 1px solid $color_borde_li;
+
+                    a{                        
+                        display: block;
+                        color: white;
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        transition: all 500ms;
+                    }
+
+                    a:first-child{
+                        border-left: 1px solid $color_borde_li;
+                    }
+
+                    a:hover{
+                        background: $color_a;
+                    }
+                }
+
+            }            
+        }
+
+        //Content
+        #content{
+            margin: 0px auto;
+            overflow: hidden;
+            background: white;
+
+            #lateral{
+                width: 22%;
+                float: left;
+                margin-top: 20px;
+                margin-left: 10px;                
+                min-height: 450px;
+
+                h3{
+                    display: block;
+                    color: $color_h3_lateral;
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    background: $fondo_h3_lateral;
+                    border-bottom: 2px solid $color_a;
+                }
+
+                .block_aside{
+                    display: block;
+                    width: 90%;
+                    margin: 5px auto;
+                    padding: 10px;                    
+                }
+
+                ul{
+                    list-style: none;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    
+                    li{
+                        margin-left: -40px;                           
+                        padding: 2px;       
+                        margin-top: 5px;                        
+                        margin-bottom: 5px;
+                        text-align: center;                                    
+                    }
+                }
+            }
+
+            #central{
+                width: 75%;
+                float: right;
+                border-left: 1px solid #ccc;
+                box-sizing: border-box;
+                box-shadow: -5px -1px 5px #ddd;
+                padding: 20px;
+                min-height: 500px;
+
+                h1{
+                    font-size: 28px;
+                    font-weight: normal;                    
+                    text-align: center;
+                    letter-spacing: 1px;
+                    border-bottom: 1px solid #ccc;                    
+                    margin-top: -5px;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    padding-top: 0px;
+                }
+
+                .product{
+                    width: 30%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                    border-right: 1px solid #ccc;                    
+                    padding-right: 5px;
+                    box-sizing: border-box;
+                    float: left;
+                    text-align: center;
+
+                    h2{
+                        font-size: 18px;
+                    }                    
+
+                    img{
+                        width: 100px;
+                    }
+
+                    p{
+                        font-weight: bold;
+                        color: #555;
+                    }
+
+                    h2, img, p{
+                        margin-bottom: 10px;
+                    }
+                }
+            }            
+            
+        }
+
+        footer{
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 5px;
+            padding-bottom: 2px;
+            color: white;
+            background: #222222;
+            clear: both;
+            border-top: 4px solid $color_a;
+        }
+
+        //Formularios
+        form{
+
+            label,
+            input[type="button"], 
+            input[type="submit"], 
+            button{
+                display: block!important;                
+                margin-top: 10px!important;                
+            }
+
+            label,
+            input[type="text"],
+            input[type="password"],
+            input[type="email"], 
+            input[type="file"]{
+                display: block;
+                width: 95%;
+                margin-top: 2px;
+                margin-bottom: 2px;                
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="file"],
+            select{
+                border: 1px solid $color_formulario_entradas;
+                box-shadow: 0px 0px 2px #ccc inset;
+                background:white;
+                padding: 2px;
+                color: gray;
+                transition: all 300ms;
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus,
+            input[type="email"]:focus,
+            input[type="file"]:focus{
+                border: 1px solid $color_formulario_entradas_focus;
+                color: black;
+            }
+            
+        }
+
+        input[type="button"], input[type="submit"], button, .button{
+            display: block;
+            border-radius: 6px;
+            width: auto;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            background: $color_formulario_botones;
+            border: 1px solid $color_borde_form;
+            cursor: pointer;
+        }
+
+        .button{
+            background: $fondo_boton;
+            color: white!important;
+            text-decoration: none;
+            transition: all 400ms;
+        }
+
+        .button:hover{
+            background: $fondo_boton_hover;
+        }
+            
+    }
+
+    #error{  
+        height: 90vh;  
+        display: block;    
+        
+        img{            
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            width: 350px;   
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 40px;
+        }
+
+    }
+}
